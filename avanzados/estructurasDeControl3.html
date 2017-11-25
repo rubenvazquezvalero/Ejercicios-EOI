@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8" />
+      <title>Estructuras de control ejercicio 3</title>
+	  <script>
+		function comprobar(){
+			var p1 = document.getElementById("passwd").value;
+			var p2 = document.getElementById("passwd2").value;
+			if (p1 == p2){
+				document.getElementById("demo").style.color = "green";
+				document.getElementById("demo").innerHTML = "Es correcta.";
+			}else{
+				document.getElementById("demo").style.color = "red";
+				document.getElementById("demo").innerHTML = "No coincide.";
+			}
+		}
+	  </script>
+   </head>
+   <body>
+	<h1>Introduce la contraseña:</h1>
+	
+	<input id="passwd" type="password" value="">
+	<input id="passwd2" type="password" value="">
+    <button onclick="comprobar()">Comprobar</button>
+	<p id="demo"></p>
+	<script>
+
+	</script>
+	</body>
+</html>
+

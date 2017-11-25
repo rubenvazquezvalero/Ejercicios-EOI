@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8" />
+      <title>Funciones ejercicio 1</title>
+	  <script>
+		function calcPot(){
+			var x = document.getElementById("numa").value;
+			var y = document.getElementById("numb").value;
+			var c = Math.pow(x, y);
+			document.getElementById("demo").innerHTML = "El resultado es: " + c;
+		}
+	  </script>
+   </head>
+   <body>
+	<h1>Calcular potencia de dos números</h1>
+	<input id="numa" type="number" value="">
+	<input id="numb" type="number" value="">
+    <button id="calculate" onclick="calcPot()">Calcular</button>
+	<p id="demo">0</p>
+	<script>
+
+	</script>
+	</body>
+</html>
+

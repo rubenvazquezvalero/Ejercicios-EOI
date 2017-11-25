@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8" />
+      <title>Estructuras de control ejercicio 4</title>
+	  <script>
+		function comprobar(){
+			var num = document.getElementById("num").value;
+			if (num.length <= 3 && num >= 0 && num % 1 == 0 && num != ""){
+				document.getElementById("demo").innerHTML = "El número tiene " + num.length + " cifras.";
+			}else{
+				document.getElementById("demo").innerHTML = "";
+				alert("Error, el número debe ser positivo, entero y tener entre 1 y 3 cifras.");
+			}
+		}
+	  </script>
+   </head>
+   <body>
+	<h1>Introduce un número entero y positivo de 1, 2 o 3 crifras:</h1>
+	
+	<input id="num" type="number" value="">
+    <button onclick="comprobar()">Comprobar</button>
+	<p id="demo"></p>
+	<script>
+
+	</script>
+	</body>
+</html>

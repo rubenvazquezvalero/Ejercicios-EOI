@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8" />
+      <title>Fechas ejercicio 1</title>
+	  <script>
+		function diaSemana(){
+			var f = new Date().getDay();
+			var dias = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+			document.getElementById("demo").innerHTML = "Hoy es: " + dias[f];
+		}
+	  </script>
+   </head>
+   <body>
+	<h1>¿Que día es hoy?</h1>
+    <button id="calculate" onclick="diaSemana()">Comprobar día</button>
+	<p id="demo">Hoy es:</p>
+	<script>
+
+	</script>
+	</body>
+</html>
+

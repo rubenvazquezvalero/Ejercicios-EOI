@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8" />
+      <title>Condicionales ejercicio 5</title>
+	  <script>
+		function mostrar(){
+			var dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
+			document.getElementById("demo").innerHTML = "";
+			for (i in dias) {
+				if(i<dias.length-1){
+					document.getElementById("demo").innerHTML += dias[i]+", ";
+				} else{
+					document.getElementById("demo").innerHTML += dias[i]+".";
+				}
+			}
+		}
+	  </script>
+   </head>
+   <body>
+	<h1>Hacer un programa que nos muestre todos los días de la semana.</h1>
+
+    <button onclick="mostrar()">Mostrar</button>
+	<p id="demo"></p>
+	<script>
+
+	</script>
+	</body>
+</html>
+

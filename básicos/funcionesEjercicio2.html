@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8" />
+      <title>Funciones ejercicio 2</title>
+	  <script>
+		function calcGrados(){
+			var x = document.getElementById("fahrenheit").value;
+			var c = (x - 32) / 1.8;
+			document.getElementById("celsius").innerHTML = x + " ºF = " + c + " ºC";
+		}
+	  </script>
+   </head>
+   <body>
+	<h1>Pasar de ºF a ºC</h1>
+	<p><input id="fahrenheit" type="number" value="32"> ºF</p>
+    <button id="calculate" onclick="calcGrados()"> Calcular</button>
+	<p id="celsius">0 ºC</p>
+	<script>
+
+	</script>
+	</body>
+</html>
+

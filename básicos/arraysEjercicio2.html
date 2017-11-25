@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8" />
+      <title>Arrays ejercicio 2</title>
+	  <script>
+		var dias = ["Lunes", "Martes", "Miércoles"];
+		dias.push("Jueves", "Viernes", "Sábado", "Domingo");
+		function mostrar(){
+			document.getElementById("demo").innerHTML = "";
+			for (i = 0; i < dias.length; i++){
+				if(i<dias.length - 1){
+					document.getElementById("demo").innerHTML += dias[i] + ", ";
+				} else{
+					document.getElementById("demo").innerHTML += dias[i] + ".";
+				}
+			}
+		}
+	  </script>
+   </head>
+   <body>
+	<h1>Crear un array con tres días de la semana y añadirle posteriormente los días faltantes y que los muestre todos.</h1>
+    <button onclick="mostrar()">mostrar</button>
+	<p id="demo"></p>
+	</body>
+</html>
+

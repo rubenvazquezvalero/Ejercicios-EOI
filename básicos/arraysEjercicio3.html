@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8" />
+      <title>Arrays ejercicio 1</title>
+   </head>
+   <body>
+	<h1>Crear un array con tres días de la semana y añadirle posteriormente los días faltantes y que los muestre todos.</h1>
+    <button onclick="ordenar()">Ordenar</button>
+	<p id="demo">Array sin ordenar: </p>
+	<p id="demo2"></p>
+	
+	<script>
+		var frutas = ["Plátano", "Melón", "Albaricoque", "Pera", "Manzana", "Naranja"];
+		for (i = 0; i < frutas.length; i++){
+				if(i<frutas.length-1){
+					document.getElementById("demo").innerHTML += frutas[i]+", ";
+				} else{
+					document.getElementById("demo").innerHTML += frutas[i]+".";
+				}
+			}
+		function ordenar(){
+			frutas.sort();
+			document.getElementById("demo2").innerHTML = "Array ordenado: ";
+			for (i = 0; i < frutas.length; i++){
+				if(i<frutas.length-1){
+					document.getElementById("demo2").innerHTML += frutas[i]+", ";
+				} else{
+					document.getElementById("demo2").innerHTML += frutas[i]+".";
+				}
+			}
+		}
+	</script>
+	</body>
+</html>
+

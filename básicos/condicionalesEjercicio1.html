@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8" />
+      <title>Condicionales ejercicio 1</title>
+	  <script>
+		function saludar(){
+			var hora = document.getElementById("hora").value;
+			if (hora == "" || hora > 23){
+				alert("Introduce una hora válida");
+			} else if(hora < 12){
+				document.getElementById("demo").innerHTML = "Buenos días";
+			} else {
+				document.getElementById("demo").innerHTML = "Buenos tardes";
+			}
+		}
+	  </script>
+   </head>
+   <body>
+	<input id="hora" type="number" value="">
+	<h1>Introduce una hora</h1>
+    <button onclick="saludar()">Saludar</button>
+	<p id="demo"></p>
+	<script>
+
+	</script>
+	</body>
+</html>
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8" />
+      <title>Introducción ejercicio 2</title>
+	  <script src="introduccionEjercicio2.js"></script>
+	<script>
+		function holaMundo(){
+			document.getElementById("hola").innerHTML = "Este se ejecuta desde el head";
+		}
+	 </script>
+   </head>
+   <body>
+    <h1 id="hola"></h1>
+    <h1 id="hola2"></h1>
+    <h1 id="hola3"></h1>
+	 <script>
+		externo();
+	 	holaMundo();
+		document.getElementById("hola2").innerHTML = "Este se ejecuta desde el body";
+	 </script>
+	</body>
+</html>

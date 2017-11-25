@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8" />
+      <title>Estructuras de control ejercicio 2</title>
+	  <script>
+		function comprobar(){
+			var n = document.getElementById("nota").value;
+			var x = "";
+			if (n >= 5 && n < 7){
+				x = "Aprobado";
+			}else if(n >= 7 && n < 9) {
+				x = "Notable";
+			}else if(n >= 9 && n < 10) {
+				x = "Sobresaliente";
+			}else if(n == 10) {
+				x = "Matrícula de honor";
+			}else if(n == "" || n > 10){
+				x = "Entrada no válida";
+			}else{
+				x = "Suspendido";
+			}
+			document.getElementById("demo").innerHTML = x;
+		}
+	  </script>
+   </head>
+   <body>
+	<h1>Introduce la nota</h1>
+	
+	<input id="nota" type="number" value="">
+    <button onclick="comprobar()">Comprobar</button>
+	<p id="demo"></p>
+	<script>
+
+	</script>
+	</body>
+</html>
+

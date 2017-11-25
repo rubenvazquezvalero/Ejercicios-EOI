@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8" />
+      <title>Estructuras de control ejercicio 1</title>
+	  <script>
+		function comprobar(){
+			var n = document.getElementById("nota").value;
+			var resultado = (n < 5) ? "Estás suspendido":"Estás aprobado";
+			/*if (n >= 5){
+				document.getElementById("demo").innerHTML = "Aprobado";
+			}else{
+				document.getElementById("demo").innerHTML = "Suspendido";
+			}*/
+			document.getElementById("demo").innerHTML = resultado;
+		}
+	  </script>
+   </head>
+   <body>
+	<h1>Introduce la nota</h1>
+	
+	<input id="nota" type="number" value="">
+    <button onclick="comprobar()">Comprobar</button>
+	<p id="demo"></p>
+	<script>
+
+	</script>
+	</body>
+</html>
+
