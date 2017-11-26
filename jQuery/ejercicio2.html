@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8" />
+      <title>jQuery ejercicio 2</title>
+	  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	  <script>
+		$(document).ready (function (){
+			$("button").click(function(){
+				$("ul:first li:first").hide();
+			});
+		});
+	  </script>
+   </head>
+   <body>
+	<h1 class="intro">Ocultar el primer elemento de la primera lista</h1>
+	1ª Lista:
+	<ul>
+		<li>Elemento1</li>
+		<li>Elemento2</li>
+		<li>Elemento3</li>
+	</ul>
+	2ª Lista:
+	<ul>
+		<li>Elemento1</li>
+		<li>Elemento2</li>
+		<li>Elemento3</li>
+	</ul>
+	
+    <button>Ocultar</button>
+	<script>
+
+	</script>
+	</body>
+</html>

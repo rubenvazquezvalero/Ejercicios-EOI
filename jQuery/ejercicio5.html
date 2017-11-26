@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8" />
+      <title>jQuery ejercicio 5</title>
+	  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	  	<style>
+		*{
+			padding: 5px;
+		}
+	</style>
+	  <script>
+		$(document).ready (function (){
+			$("tr:odd").css("background-color", "red");
+			$("tr:even").css("background-color", "green");
+		});
+	  </script>
+   </head>
+   <body>
+ 
+	<h1>Filas pares en rojo y filas impares en verde.</h1>
+
+<table border="1">
+  <tr>
+    <th>1ª fila</th>
+    <th>----</th>
+    <th>----</th>
+    <th>----</th>
+  </tr>
+  <tr>
+    <td>2ª fila</td>
+    <td>----</td>
+    <td>----</td>
+    <td>----</td>
+  </tr>
+  <tr>
+    <td>3ª fila</td>
+    <td>----</td>
+    <td>----</td>
+    <td>----</td>
+  </tr>
+  <tr>
+    <td>4ª fila</td>
+    <td>----</td>
+    <td>----</td>
+    <td>----</td>
+  </tr>
+  <tr>
+    <td>5ª fila</td>
+    <td>----</td>
+    <td>----</td>
+    <td>----</td>
+  </tr>
+  <tr>
+    <td>6ª fila</td>
+    <td>----</td>
+    <td>----</td>
+    <td>----</td>
+  </tr>
+</table>
+	</body>
+</html>

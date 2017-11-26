@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8" />
+      <title>jQuery ejercicio 4</title>
+	  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	  <script>
+		$(document).ready (function (){
+			$(".btn-1").click(function(){
+				$('a[target="_blank"]').hide();
+			});
+			$(".btn-2").click(function(){
+				$('a[target=""]').hide();
+			});
+		});
+	  </script>
+   </head>
+   <body>
+	<h1>Ocultar enlaces por el atributo target</h1>
+
+	<p><a target="_blank" href="http://www.google.es/">Google</a></p>
+	<p><a target="" href="http://www.github.com/">GitHub</a></p>
+	
+    <button class="btn-1">Ocultar enlace 1</button>
+    <button class="btn-2">Ocultar enlace 2</button>
+	<script>
+
+	</script>
+	</body>
+</html>
