@@ -5,11 +5,10 @@
       <title>Estructuras de control ejercicio 5</title>
 	  <script>
 		function comprobar(){
-			var fechaN, diaMes, mes, año;
+			var fechaN, diaMes, mes;
 			fechaN = new Date(document.getElementById("fecha").value);
 			diaMes = fechaN.getDate();
 			mes = fechaN.getMonth();
-			año = fechaN.getYear();
 			if (diaMes == 25 && mes == 11){
 				document.getElementById("demo").innerHTML = "Es navidad";
 				document.getElementById("demo").style.color = "red";
