@@ -5,17 +5,19 @@
       <title>Estructuras de control ejercicio 5</title>
 	  <script>
 		function comprobar(){
-			console.log(document.getElementById("fecha").valor);
-			var fechaN, dia, mes, ano;
-			fechaN = new Date();
-			dia = document.getElementById("").valor;
-			mes = document.getElementById("").valor;
-			ano = document.getElementById("").valor;
-			if (dia == navidad){
+			var fechaN, diaMes, mes, año;
+			fechaN = new Date(document.getElementById("fecha").value);
+			diaMes = fechaN.getDate();
+			mes = fechaN.getMonth();
+			año = fechaN.getYear();
+			if (diaMes == 25 && mes == 11){
 				document.getElementById("demo").innerHTML = "Es navidad";
-			}else{
-				document.getElementById("demo").innerHTML = "";
-				alert("Error, el número debe ser positivo, entero y tener entre 1 y 3 cifras.");
+				document.getElementById("demo").style.color = "red";
+			}else if(fechaN == "Invalid Date") {
+				alert("Error, fecha no válida");
+			}else {
+				document.getElementById("demo").innerHTML = "No es navidad";
+				document.getElementById("demo").style.color = "black";
 			}
 		}
 	  </script>
