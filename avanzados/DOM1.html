@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8" />
+      <title>DOM</title>
+	  <script>
+	  function color(valor){
+		document.getElementsByTagName("body")[0].style.backgroundColor = valor;
+	  }
+	  </script>
+   </head>
+   <body>
+	<h1>Cambiar color de fondo según el botón pulsado:</h1>
+	
+    <button onclick="color('red')">Rojo</button>
+    <button onclick="color('green')">Verde</button>
+    <button onclick="color('blue')">Azul</button>
+    <button onclick="color('yellow')">Amarillo</button>
+    <button onclick="color('black')">Negro</button>
+
+	</body>
+</html>
