@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8" />
+      <title>Estructuras de control ejercicio 7</title>
+	  <script>
+		function comprobar(){
+			var year, day, month, fechaN, fechaA, fechaB;
+			year = document.getElementById("year").value;
+			day = document.getElementById("day").value;
+			month = document.getElementById("month").value;
+			fechaN = new Date();
+			fechaN.setFullYear(year,month - 1,day);
+			fechaA = new Date();
+			fechaB = new Date();
+			fechaA.setFullYear(year,00,01);
+			fechaB.setFullYear(year,02,31);
+			if (year == "" || month == "" || day == "") {
+				alert("Error, fecha no válida");
+			}else if(fechaN >= fechaA && fechaN <= fechaB){
+				document.getElementById("demo").innerHTML = "Corresponde al primer trimestre del año";
+				document.getElementById("demo").style.color = "green";
+			}else {
+				document.getElementById("demo").innerHTML = "No corresponde al primer trimestre del año";
+				document.getElementById("demo").style.color = "red";
+			}
+		}
+	  </script>
+   </head>
+   <body>
+	<h1>Mostrar un mensaje si corresponde al primer trimestre del año:</h1>
+	
+	<form>
+		Dia: <input id="day" type="text">
+		Mes: <input id="month" type="text">
+		Año: <input id="year" type="text">
+	</form>
+	
+    <button onclick="comprobar()">Comprobar</button>
+	<p id="demo"></p>
+	<script>
+
+	</script>
+	</body>
+</html>
