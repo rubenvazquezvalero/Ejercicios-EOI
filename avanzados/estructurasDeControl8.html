@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8" />
+      <title>Estructuras de control ejercicio 8</title>
+	  <script>
+		function comprobar(){
+			var numero, opcion;
+			opcion = "";
+			numero = document.getElementById("numero").value;
+			switch(numero){
+				case "1":
+					opcion = 1;
+					break;
+				case "2":
+					opcion = 2;
+					break;
+				case "3":
+					opcion = 3;
+					break;
+				case "4":
+					opcion = 4;
+					break;
+				case "5":
+					opcion = 5;
+					break;
+				default:
+					alert("Error, no es un número comprendido entre 1 y 5");
+			}
+			document.getElementById("demo").innerHTML = "Número introducido: " + opcion;
+		}
+	  </script>
+   </head>
+   <body>
+	<h1>Ingresar un valor entre 1 y 5. Mostrarlo si es correcto y si no mostrar mensaje de error:</h1>
+	
+	<form>
+		Introduce un número entre 1 y 5: <input id="numero" type="text">
+	</form>
+	
+    <button onclick="comprobar()">Comprobar</button>
+	<p id="demo"></p>
+	<script>
+
+	</script>
+	</body>
+</html>
